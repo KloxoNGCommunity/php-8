@@ -77,7 +77,7 @@
 Summary: PHP scripting language for creating dynamic web sites
 Name: php80
 Version: 8.0.6
-Release: 3%{?dist}
+Release: 3.kng%{?dist}
 # All files licensed under PHP version 3.01, except
 # Zend is licensed under Zend
 # TSRM is licensed under BSD
