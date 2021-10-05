@@ -191,7 +191,11 @@ running in prefork mode. This module is deprecated.
 %package -n mod_%{name}
 Summary: PHP module for the Apache HTTP Server
 # ensure we build with stock httpd, not httpd24u
+%if %{with_httpd2410}
+BuildRequires: httpd-devel < 2.4.38
+%else
 BuildRequires: httpd-devel < 2.4.10
+%endif
 %if %{with_modphp}
 Requires: httpd-mmn = %{_httpd_mmn}
 
